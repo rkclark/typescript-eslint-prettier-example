@@ -1,5 +1,6 @@
 {
   "scripts": {
+    "build": "rm -rf ./dist && tsc -p tsconfig.json",
     "lint": "eslint --ext .js,.ts ./",
     "lint:fix": "eslint --ext .js,.ts --fix ./",
     "lint:changed": "eslint $(git diff --name-only --diff-filter=ACMRTUXB main | grep  -E \"(.js$|.ts$)\")",
